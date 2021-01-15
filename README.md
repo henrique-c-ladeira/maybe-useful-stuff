@@ -14,6 +14,12 @@
 	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'	
 ```
 
+## generate openssl
+```
+openssl genrsa -out private.pem 2048
+openssl rsa -in private.pem -pubout > public.pem
+```
+
 ## misc (check later)
 ```
 rive.app
