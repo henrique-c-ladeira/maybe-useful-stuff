@@ -36,6 +36,15 @@ https://undraw.co/illustrations
 ```
 keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 ```
+Workaround go up android
+
+```
+rm android/app/src/main/assets/index.android.bundle
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+---> Apagar drawble pasta Res
+```
 
 ## reset css
 ```
