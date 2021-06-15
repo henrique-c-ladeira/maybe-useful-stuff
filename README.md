@@ -30,6 +30,7 @@ react libs:
 
 sites:
 https://undraw.co/illustrations
+https://sizze.io/
 ```
 
 ## react native
