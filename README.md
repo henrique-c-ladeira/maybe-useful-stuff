@@ -53,6 +53,18 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 ---> Apagar drawble pasta Res
 ```
 
+Mac M1 fix
+```
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
+      end
+    end
+  end
+  
+---> excluded archtecture: arm64
+```
 ## reset css
 ```
 https://meyerweb.com/eric/tools/css/reset/
