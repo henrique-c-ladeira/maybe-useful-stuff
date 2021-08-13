@@ -69,3 +69,6 @@ post_install do |installer|
 ```
 https://meyerweb.com/eric/tools/css/reset/
 ```
+
+## blender to lottie
+https://stackoverflow.com/questions/62275088/how-can-i-convert-a-gif-to-lottie-json
